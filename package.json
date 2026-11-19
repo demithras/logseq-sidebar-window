@@ -1,0 +1,29 @@
+{
+  "name": "logseq-sidebar-window",
+  "version": "0.1.1",
+  "description": "Shows Logseq's right sidebar in a second window, for a second screen.",
+  "author": "demithras",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demithras/logseq-sidebar-window.git"
+  },
+  "private": true,
+  "type": "module",
+  "main": "index.html",
+  "logseq": {
+    "id": "sidebar-window",
+    "title": "Sidebar Window",
+    "icon": "./icon.svg",
+    "main": "index.html"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test \"test/*.test.js\"",
+    "check": "npm run build && npm test"
+  },
+  "devDependencies": {
+    "@logseq/libs": "0.3.4",
+    "esbuild": "^0.25.0"
+  }
+}
